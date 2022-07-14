@@ -1,0 +1,20 @@
+<script src="jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<body>
+	<div float="center">
+		<form action="#" th:action="@{/games}" th:object="${search}" method="get">
+			<table border="1">
+				<caption>Links</caption>
+				<th>Search</th>
+				<tr>
+					<td><input type="text" th:field="*{text}" /></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit" /></td>
+				</tr>
+			</table>
+		</form>
+		<p>Website is so obsolete it doesn't even have copyright</p>
+	</div>
+</body>

@@ -1,0 +1,20 @@
+appId=Web
+server.port=
+springdoc.swagger-ui.path=/swagger-ui-custom.html
+springdoc.swagger-ui.operationsSorter=method
+secretKey=
+# format guide
+# i.e
+# from -> https://website.com/search?query=*;-,
+# to -> https://website.com/search?query=awesome-product-you-want-to-search
+#
+# * -> Search params goes here 
+# ; -> Separates link and word separator in query
+# , -> Separates each link and params 
+links=
+adminUser=
+adminPassword=
+salt=
+
+absolutePathToResumeScript=
+resumeScript=script.py

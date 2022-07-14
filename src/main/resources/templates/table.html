@@ -1,0 +1,29 @@
+<script src="jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<br />
+<h1>!!!YOU MUST ALLOW POPUP!!!</h1>
+<br />
+<button>Open all</button>
+<script>
+	$('button').click(function () {
+		$('a').each(function () {
+			window.open($(this).attr('href'));
+		});
+	})
+</script>
+<table>
+	<caption>Links</caption>
+	<thead>
+		<tr>
+			<th> Link </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:if="${links.empty}">
+			<td colspan="2"> No Links Available </td>
+		</tr>
+		<tr th:each="link : ${links}">
+			<td><a th:href="${link.url}"><span th:text="${link.url}"></a></span></td>
+		</tr>
+	</tbody>
+</table>
